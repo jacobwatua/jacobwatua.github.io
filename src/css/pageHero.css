@@ -14,7 +14,7 @@
 
 #hero-info {
   background-color: rgba(255, 255, 255, 0.6);
-  height: 80vh;
+  min-height: 80vh;
 }
 
 /* General Styling */

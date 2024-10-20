@@ -1,6 +1,7 @@
 @import url("./customSyles.css");
 @import url("./pageHero.css");
 @import url("./projects.css");
+@import url("./sidebar.css");
 
 body {
   margin: 0;
@@ -85,7 +86,7 @@ h3 {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 @media (max-width: 768px) {
@@ -94,5 +95,8 @@ h3 {
   }
   h2 {
     font-size: 1.5rem;
+  }
+  .nav-tabs {
+    display: none;
   }
 }

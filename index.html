@@ -9,7 +9,10 @@
     />
     <title>Jacob Watua</title>
     <script src="./src/js/projects.js"></script>
-    <style></style>
+    <script src="./src/js/main.js"></script>
+    <style>
+  
+    </style>
   </head>
   <body>
     <header>
@@ -20,8 +23,109 @@
           <li><a href="./about.html">About</a></li>
           <li><a href="./contact.html">Contact</a></li>
         </ul>
+        <div style="position: fixed; top: 10px; left: 2.5% ;gap: 8px" class="flex">
+          <div
+          class="flex items-center justify-center"
+          style="height:50px; width: 50px; border-radius: 50%; background-color: #f0f0f0; color: black ">
+            <h1 style="font-size: larger; font-weight: extra-bold;"><b>JW</b></h1>
+          </div>
+          
+        </div>
       </nav>
+      <div class="burger" onclick="toggleSidebar()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="100"
+          height="100"
+          viewBox="0,0,300,150"
+        >
+          <g
+            fill="#ffffff"
+            fill-rule="nonzero"
+            stroke="none"
+            stroke-width="1"
+            stroke-linecap="butt"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            stroke-dasharray=""
+            stroke-dashoffset="0"
+            font-family="none"
+            font-weight="none"
+            font-size="none"
+            text-anchor="none"
+            style="mix-blend-mode: normal"
+          >
+            <g transform="scale(5.33333,5.33333)">
+              <path
+                d="M5.5,9c-0.54095,-0.00765 -1.04412,0.27656 -1.31683,0.74381c-0.27271,0.46725 -0.27271,1.04514 0,1.51238c0.27271,0.46725 0.77588,0.75146 1.31683,0.74381h37c0.54095,0.00765 1.04412,-0.27656 1.31683,-0.74381c0.27271,-0.46725 0.27271,-1.04514 0,-1.51238c-0.27271,-0.46725 -0.77588,-0.75146 -1.31683,-0.74381zM5.5,22.5c-0.54095,-0.00765 -1.04412,0.27656 -1.31683,0.74381c-0.27271,0.46725 -0.27271,1.04514 0,1.51238c0.27271,0.46725 0.77588,0.75146 1.31683,0.74381h37c0.54095,0.00765 1.04412,-0.27656 1.31683,-0.74381c0.27271,-0.46725 0.27271,-1.04514 0,-1.51238c-0.27271,-0.46725 -0.77588,-0.75146 -1.31683,-0.74381zM5.5,36c-0.54095,-0.00765 -1.04412,0.27656 -1.31683,0.74381c-0.27271,0.46725 -0.27271,1.04514 0,1.51238c0.27271,0.46725 0.77588,0.75146 1.31683,0.74381h37c0.54095,0.00765 1.04412,-0.27656 1.31683,-0.74381c0.27271,-0.46725 0.27271,-1.04514 0,-1.51238c-0.27271,-0.46725 -0.77588,-0.75146 -1.31683,-0.74381z"
+              ></path>
+            </g>
+          </g>
+        </svg>
+      </div>
     </header>
+
+    <aside class="side-bar hidden">
+      <div style="position: absolute; left:10px ; top: 10px;"
+      onclick="toggleSidebar()"
+      id="close-btn"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="20px"
+          height="20px"
+          viewBox="0 0 50 50"
+        >
+        <g
+        fill="#ffffff"
+        fill-rule="nonzero"
+        stroke="none"
+        stroke-width="1"
+        stroke-linecap="butt"
+        stroke-linejoin="miter"
+        stroke-miterlimit="10"
+        stroke-dasharray=""
+        stroke-dashoffset="0"
+        font-family="none"
+        font-weight="none"
+        font-size="none"
+        text-anchor="none"
+        style="mix-blend-mode: normal"
+      >
+          <path
+            d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"
+          ></path>
+        </svg>
+      </div>
+      <!-- profile image -->
+      <div class="profile-details">
+        <img
+          src="./src/images/jacob_Watua.jpg"
+          alt="profile image"
+          width="70px"
+          height="70px"
+          style="border-radius: 50%; object-fit: cover"
+        />
+        <p>Jacob Watua</p>
+      </div>
+      <ul
+        class="flex justify-start items-center flex-col"
+        style="padding: 1rem"
+      >
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <!-- social media icons and links -->
+      <div>
+        <ul></ul>
+      </div>
+    </aside>
 
     <!-- Hero section -->
     <section class="hero">

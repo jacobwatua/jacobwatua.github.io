@@ -1,0 +1,83 @@
+.side-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 18rem;
+  height: 100vh;
+  background-color: white;
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.98);
+  z-index: 29;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 10rem 1fr 15%;
+  animation: slide-in 0.3s alternate;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.side-bar > .profile-details {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.side-bar ul {
+  gap: 7px;
+  list-style: none;
+}
+.side-bar ul li {
+  padding: 0.5rem 1rem;
+
+  width: 80%;
+  margin: 5px auto;
+  border-radius: 7px;
+  text-align: center;
+}
+.side-bar ul li:hover {
+  background-color: #ff6b6b;
+}
+.side-bar ul li a {
+  text-align: center;
+}
+.burger {
+  position: fixed;
+  top: 0;
+  right: 2.5%;
+  height: 40px;
+  width: 40px;
+  z-index: 29;
+  height: 60px;
+}
+.burger svg {
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .side-bar {
+    display: none;
+  }
+  .burger {
+    display: none;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    margin-left: 100%;
+  }
+  to {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .side-bar {
+    background-color: rgba(0, 0, 0, 0.98);
+    box-shadow: 1px 0px 0 rgba(0, 255, 255, 0.98);
+  }
+}
